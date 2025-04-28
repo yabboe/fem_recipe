@@ -7,7 +7,7 @@
 body {
   background-color: #f3e5d7;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,10 +16,9 @@ body {
 }
 
 img {
-  width: 656px;
-  height: 300px;
+  width: 90%;
+  height: auto;
   border-radius: 12px;
-  margin: 40px 40px 40px 40px;
 }
 
 p {
@@ -30,12 +29,26 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   height: auto;
-  width: 736px;
+  width: 90%;
+  max-width: 736px;
   background-color: white;
-  padding: 20px;
+
   border-radius: 24px;
+
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.title_container {
+  margin-bottom: 32px;
+  margin-top: 32px;
+  width: 90%;
+}
+
+.content_container {
+  width: 90%;
 }
 
 h1 {
@@ -51,14 +64,40 @@ h2 {
   color: #854632;
 }
 
-.instructions_h1 h2 {
-  padding-left: 30px;
+.prep_container {
+  display: flex;
+  background-color: #fff7fb;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: flex-start;
+  width: 90%;
+  border-radius: 12px;
+}
+
+.prep_container h3 {
   padding-bottom: 24px;
+  margin-left: 0;
+}
+
+.prep_container ul {
+  list-style-type: none; /* Removes default list styling */
+  padding-left: 0; /* Removes default padding */
+}
+
+.prep_container ul li p {
+  margin-left: 14px;
+  margin-bottom: 8px;
+  font-size: 16px;
 }
 
 .instructions_container {
-  padding-left: 40px;
   margin-bottom: 32px;
+  width: 90%;
+}
+
+.instructions_container h2 {
+  padding-bottom: 24px;
 }
 
 .instructions_container p {
@@ -69,22 +108,30 @@ h2 {
 .ingredients_container {
   margin-top: 32px;
   margin-bottom: 32px;
-  padding-left: 40px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
 }
 
 .ingredients_container h2 {
   padding-bottom: 24px;
 }
 
+.ingredienats_container ul {
+  list-style-type: none; /* Removes default list styling */
+  padding-left: 0; /* Removes default padding */
+}
+
 .ingredients_container ul li {
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 16px;
   color: #854632;
 }
 
 .ingredients_container ul li p {
   margin-left: 18px;
-  font-weight: 200;
+  font-weight: 300;
   color: #854632;
 }
 
@@ -103,9 +150,9 @@ h2 {
   list-style-position: outside;
   padding-left: 20px;
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 16px;
   color: #854632;
-  font-weight: 400;
+  font-weight: 300;
   font-family: "outfit", sans-serif;
 }
 
